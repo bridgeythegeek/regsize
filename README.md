@@ -67,6 +67,6 @@ $ python regsize.py --max=6 /tmp/win/Windows/System32/config/SYSTEM
 21200  0.01283 CsiTool-CreateHive-{00000000-0000-0000-0000-000000000000}\ControlSet001\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\ModePersistence
 11784  1.40188 CsiTool-CreateHive-{00000000-0000-0000-0000-000000000000}\ControlSet001\Enum\ACPI_HAL\PNP0C08\0\LogConf\BasicConfigVector
 ```
-In this example the Shannon entropy of each data can be seen in the second column.
+In this example, the Shannon entropy of each data can be seen in the second column.
 ### As an aside...
-In this real-life example, <tt>ProgramsCache</tt> was full of <tt>0x00</tt>. Still haven't been able to figure out why. Do please let me know if you know of a reason why this might be so!
+In the first real-life example, <tt>ProgramsCache</tt> was full of <tt>0x00</tt>. Still haven't been able to figure out why. Do please let me know if you know of a reason why this might be so!
