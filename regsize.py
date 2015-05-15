@@ -97,7 +97,7 @@ if __name__ == '__main__':
     argp = argparse.ArgumentParser()
     argp.add_argument('target', nargs='+', help='file to analyse. supports globbing: folder{0}*'.format(os.sep))
     argp.add_argument('--max', '-m', help='report the top MAX sizes', type=int, default=20)
-    argp.add_argument('--no-ent', '-E', help='show Shannon entropy (0-8)', action='store_true')
+    argp.add_argument('--no-ent', '-E', help='don\'t calculate the Shannon entropy', action='store_true')
     args = argp.parse_args()
 
     targets = []
