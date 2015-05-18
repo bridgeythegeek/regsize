@@ -15,7 +15,7 @@ The fantastic python-registry module which does all the heavy lifting of parsing
 
 ## Usage
 ```
-usage: regsize.py [-h] [--max MAX] [--no-ent] target [target ...]
+usage: regsize.py [-h] [--max MAX] [--no-ent] [--csv] target [target ...]
 
 positional arguments:
   target             file to analyse. supports globbing: folder/*
@@ -24,6 +24,7 @@ optional arguments:
   -h, --help         show this help message and exit
   --max MAX, -m MAX  report the top MAX sizes
   --no-ent, -E       don't calculate the Shannon entropy
+  --csv              output as csv
 ```
 ## Usage Examples
 ```
