@@ -13,6 +13,13 @@ By listing the Registry key values by their size, or at least the top 20, an inv
 The fantastic python-registry module which does all the heavy lifting of parsing the registry files.
 - http://www.williballenthin.com/registry/
 
+#### A Note on Installing from PIP
+At the time of writing, pip is serving up python-registry 1.0.4. This is not the latest version. The latest version is [1.1.0a](https://pypi.python.org/pypi/python-registry/1.1.0). However, 1.1.0a is a pre-release and as such, will only be installed if you use the <tt>--pre</tt> switch with the pip command. For example:
+
+```
+$ pip install --pre python-registry
+```
+
 ## Usage
 ```
 usage: regsize.py [-h] [--max MAX] [--no-ent] [--csv] target [target ...]
