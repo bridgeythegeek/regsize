@@ -36,7 +36,7 @@ The 'max' setting does not limit the number of key values returned, but the numb
 
 For example, with <tt>--max=3</tt> you might get more than 3 keys returned. For example:
 ```
-$ python3 regsize.py --max=3 /media/user/WINDOWS/Windows/System32/config/DEFAULT
+$ python regsize.py --max=3 /media/user/WINDOWS/Windows/System32/config/DEFAULT
 [/media/user/WINDOWS/Windows/System32/config/DEFAULT]
 32768     Software\SSPrint\spe__\UPDEScripts
 26360     Software\SSPrint\spe__\Samsung Universal Print Driver 2\Capabilities
@@ -51,6 +51,7 @@ This can be useful for finding binaries or encrypted data.
 See Lance Mueller's simple, but excellent explanation:
 
 - http://www.forensickb.com/2013/03/file-entropy-explained.html
+
 ## Real-life Example
 ```
 $ python regsize.py --max=5 --no-ent /media/user/SHARED/reg/NTUSER.DAT 
