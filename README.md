@@ -47,6 +47,10 @@ If regsize had truncated at 3, you would only see one of the bottom two entries.
 ## A note on Shannon entropy
 In short, Shannon entropy is a measure of entropy which scores between 0 and 8. The closer to 8, the greater the entropy in the data.
 This can be useful for finding binaries or encrypted data.
+
+See Lance Mueller's simple, but excellent explanation:
+
+- http://www.forensickb.com/2013/03/file-entropy-explained.html
 ## Real-life Example
 ```
 $ python regsize.py --max=5 --no-ent /media/user/SHARED/reg/NTUSER.DAT 
@@ -61,12 +65,12 @@ In this instance, <tt>pawd</tt> contained an encoded binary. The Shannon entropy
 ```
 $ python regsize.py --max=6 /tmp/win/Windows/System32/config/SYSTEM
 [/tmp/win/Windows/System32/config/SYSTEM]
-92160  0.05285 CsiTool-CreateHive-{00000000-0000-0000-0000-000000000000}\ControlSet001\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\MMDMMContext
-71278  3.78619 CsiTool-CreateHive-{00000000-0000-0000-0000-000000000000}\ControlSet001\Control\Session Manager\AppCompatCache\AppCompatCache
-68039  7.78358 CsiTool-CreateHive-{00000000-0000-0000-0000-000000000000}\ControlSet001\Services\rdyboost\Parameters\BootPlan
-23700  3.39098 CsiTool-CreateHive-{00000000-0000-0000-0000-000000000000}\ControlSet001\Control\ProductOptions\ProductPolicy
-21200  0.01283 CsiTool-CreateHive-{00000000-0000-0000-0000-000000000000}\ControlSet001\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\ModePersistence
-11784  1.40188 CsiTool-CreateHive-{00000000-0000-0000-0000-000000000000}\ControlSet001\Enum\ACPI_HAL\PNP0C08\0\LogConf\BasicConfigVector
+92160  0.05285 ControlSet001\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\MMDMMContext
+71278  3.78619 ControlSet001\Control\Session Manager\AppCompatCache\AppCompatCache
+68039  7.78358 ControlSet001\Services\rdyboost\Parameters\BootPlan
+23700  3.39098 ControlSet001\Control\ProductOptions\ProductPolicy
+21200  0.01283 ControlSet001\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000\ModePersistence
+11784  1.40188 ControlSet001\Enum\ACPI_HAL\PNP0C08\0\LogConf\BasicConfigVector
 ```
 In this example, the Shannon entropy of each data can be seen in the second column.
 ### As an aside...
